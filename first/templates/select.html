@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select</title>
+</head>
+<body>
+    <p>
+        {% if number|divisibleby:2 %}
+{#        장고에서 제공하는 필터 메소드인 divisibleby를 사용하여, number가 2로 나누어지는지 확인한다. #}
+            짝수입니다.
+        {%  else %}
+            홀수입니다.
+        {% endif %}
+{#        장고 템플릿에서는 if문을 사용할 때 반드시 endif를 사용해야한다.#}
+    </p>
+    <p>
+        <a href = "{%  url 'result' %}"><button>결과 보기 </button></a>
+    </p>
+</body>
+</html>

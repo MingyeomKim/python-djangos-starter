@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <ul>
+        {%  for num in numbers %}
+        <li>{{ num }}</li>
+{#            특정 변수를 html 내부에 출력하기 위해서는 중괄호를 두번 쓰면 된다!#}
+        {% endfor %}
+    </ul>
+</body>
+</html>
