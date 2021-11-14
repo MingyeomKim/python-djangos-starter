@@ -19,6 +19,8 @@ from first import views
 
 urlpatterns = [
     # path('', views.index, name = "index"),
-    path('', include('first.urls')), #first안에 있는 urls 파일을 참고하겠다.
+    path('first/', include('first.urls')), #first안에 있는 urls 파일을 참고하겠다.
     path('admin/', admin.site.urls),
+    path('second/', include('second.urls')),
+    path('third/', include('third.urls')),
 ]
